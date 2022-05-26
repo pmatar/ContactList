@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  ContactList
 //
 //  Created by Paul Matar on 26/05/2022.
@@ -7,17 +7,19 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeView: View {
+    private let persons = Person.getContactList()
+    
     var body: some View {
         
         NavigationView {
             TabView {
-                NameListView()
+                NameListView(persons: persons)
                     .tabItem {
                         Image(systemName: "person.2.fill")
                         Text("Contacts")
                     }
-                ContactListView()
+                ContactListView(persons: persons)
                     .tabItem {
                         Image(systemName: "phone.fill")
                         Text("Numbers")
@@ -29,6 +31,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HomeView()
     }
 }

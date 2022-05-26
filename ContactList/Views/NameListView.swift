@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct NameListView: View {
-    let persons = Person.getContactList()
+    let persons: [Person]
     
     var body: some View {
         
@@ -22,6 +22,6 @@ struct NameListView: View {
 
 struct NameListView_Previews: PreviewProvider {
     static var previews: some View {
-        NameListView()
+        NameListView(persons: Person.getContactList())
     }
 }
