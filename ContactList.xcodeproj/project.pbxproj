@@ -117,20 +117,12 @@
 			isa = PBXGroup;
 			children = (
 				CFF6BB80283F97AC0022C198 /* HomeView.swift */,
+				CFF6BB98283F9AF40022C198 /* ContactListView.swift */,
 				CFF6BB96283F9AE60022C198 /* NameListView.swift */,
 				CFF6BB9A283F9EE70022C198 /* NameRowView.swift */,
 				CFF6BB9C283F9FEA0022C198 /* DetailsView.swift */,
-				CFF6BB98283F9AF40022C198 /* ContactListView.swift */,
-				CFF6BB95283F992D0022C198 /* Screen */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		CFF6BB95283F992D0022C198 /* Screen */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Screen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

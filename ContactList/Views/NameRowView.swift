@@ -13,9 +13,7 @@ struct NameRowView: View {
     var body: some View {
         
         NavigationLink(destination: DetailsView(person: person)) {
-                Text(person.fullName)
-                .foregroundColor(.black)
-                .frame(alignment: .leading)
+            Text(person.fullName)
         }
         
     }

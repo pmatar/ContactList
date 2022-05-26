@@ -12,10 +12,9 @@ struct NameListView: View {
     
     var body: some View {
         
-        List(persons, id:\.email) { person in
+        List(persons, id: \.email) { person in
             NameRowView(person: person)
-        }.navigationTitle("Contact List")
-            .listStyle(.plain)
+        }.listStyle(.plain)
         
     }
 }

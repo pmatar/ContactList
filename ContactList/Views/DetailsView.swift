@@ -11,6 +11,7 @@ struct DetailsView: View {
     let person: Person
     
     var body: some View {
+        
         List {
             HStack {
                 Spacer()

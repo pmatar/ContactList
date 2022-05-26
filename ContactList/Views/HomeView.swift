@@ -24,7 +24,7 @@ struct HomeView: View {
                         Image(systemName: "phone.fill")
                         Text("Numbers")
                     }
-            }
+            }.navigationTitle("Contact List")
         }
     }
 }
