@@ -12,7 +12,7 @@ struct NameRowView: View {
     
     var body: some View {
         
-        NavigationLink(destination: DetailsView()) {
+        NavigationLink(destination: DetailsView(person: person)) {
                 Text(person.fullName)
                 .foregroundColor(.black)
                 .frame(alignment: .leading)
@@ -23,6 +23,9 @@ struct NameRowView: View {
 
 struct NameRowView_Previews: PreviewProvider {
     static var previews: some View {
-        NameRowView(person: Person(name: "John", surname: "Silverman", email: "131@me.com", phoneNumber: "+1422412120"))
+        NameRowView(person: Person(name: "John",
+                                   surname: "Silverman",
+                                   email: "131@me.com",
+                                   phoneNumber: "+1422412120"))
     }
 }

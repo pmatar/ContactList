@@ -8,13 +8,37 @@
 import SwiftUI
 
 struct DetailsView: View {
+    let person: Person
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List {
+            HStack {
+                Spacer()
+                Image(systemName: "person.fill")
+                    .resizable()
+                    .frame(width: 150, height: 150)
+                .padding()
+                Spacer()
+            }
+            
+            HStack {
+                Image(systemName: "phone").foregroundColor(.blue)
+                Text(person.phoneNumber)
+            }
+            HStack {
+                Image(systemName: "tray").foregroundColor(.blue)
+                Text(person.email)
+            }
+        }.navigationTitle(person.fullName)
+            .listStyle(.grouped)
     }
 }
 
 struct DetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailsView()
+        DetailsView(person: Person(name: "John",
+                                   surname: "Silverman",
+                                   email: "131@me.com",
+                                   phoneNumber: "+1422412120"))
     }
 }
