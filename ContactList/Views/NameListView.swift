@@ -13,7 +13,9 @@ struct NameListView: View {
     var body: some View {
         
         List(persons, id: \.email) { person in
-            NameRowView(person: person)
+            NavigationLink(destination: DetailsView(person: person)) {
+                Text(person.fullName)
+            }
         }.listStyle(.plain)
         
     }

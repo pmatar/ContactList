@@ -13,20 +13,14 @@ struct ContactListView: View {
     var body: some View {
         
         List(persons, id: \.email) { person in
-            Section {
-                HStack {
-                    Image(systemName: "phone").foregroundColor(.blue)
-                    Text(person.phoneNumber)
-                }
-                HStack {
-                    Image(systemName: "tray").foregroundColor(.blue)
-                    Text(person.email)
-                }
-            } header: {
-                Text(person.fullName)
+            Section(header: Text(person.fullName)) {
+                Label(person.phoneNumber, systemImage: "phone")
+                Label(person.email, systemImage: "tray")
             }
         }
+        
     }
+    
 }
 
 struct ContactListView_Previews: PreviewProvider {

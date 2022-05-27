@@ -22,14 +22,9 @@ struct DetailsView: View {
                 Spacer()
             }
             
-            HStack {
-                Image(systemName: "phone").foregroundColor(.blue)
-                Text(person.phoneNumber)
-            }
-            HStack {
-                Image(systemName: "tray").foregroundColor(.blue)
-                Text(person.email)
-            }
+            Label(person.phoneNumber, systemImage: "phone")
+            Label(person.email, systemImage: "tray")
+            
         }.navigationTitle(person.fullName)
             .listStyle(.grouped)
     }
@@ -37,9 +32,6 @@ struct DetailsView: View {
 
 struct DetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailsView(person: Person(name: "John",
-                                   surname: "Silverman",
-                                   email: "131@me.com",
-                                   phoneNumber: "+1422412120"))
+        DetailsView(person: Person.getContactList().first!)
     }
 }

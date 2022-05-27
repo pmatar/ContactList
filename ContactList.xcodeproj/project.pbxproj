@@ -15,7 +15,6 @@
 		CFF6BB8F283F98970022C198 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF6BB8E283F98970022C198 /* DataManager.swift */; };
 		CFF6BB97283F9AE60022C198 /* NameListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF6BB96283F9AE60022C198 /* NameListView.swift */; };
 		CFF6BB99283F9AF40022C198 /* ContactListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF6BB98283F9AF40022C198 /* ContactListView.swift */; };
-		CFF6BB9B283F9EE70022C198 /* NameRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF6BB9A283F9EE70022C198 /* NameRowView.swift */; };
 		CFF6BB9D283F9FEA0022C198 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFF6BB9C283F9FEA0022C198 /* DetailsView.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +28,6 @@
 		CFF6BB8E283F98970022C198 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		CFF6BB96283F9AE60022C198 /* NameListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameListView.swift; sourceTree = "<group>"; };
 		CFF6BB98283F9AF40022C198 /* ContactListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListView.swift; sourceTree = "<group>"; };
-		CFF6BB9A283F9EE70022C198 /* NameRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameRowView.swift; sourceTree = "<group>"; };
 		CFF6BB9C283F9FEA0022C198 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -119,7 +117,6 @@
 				CFF6BB80283F97AC0022C198 /* HomeView.swift */,
 				CFF6BB98283F9AF40022C198 /* ContactListView.swift */,
 				CFF6BB96283F9AE60022C198 /* NameListView.swift */,
-				CFF6BB9A283F9EE70022C198 /* NameRowView.swift */,
 				CFF6BB9C283F9FEA0022C198 /* DetailsView.swift */,
 			);
 			path = Views;
@@ -202,7 +199,6 @@
 				CFF6BB81283F97AC0022C198 /* HomeView.swift in Sources */,
 				CFF6BB9D283F9FEA0022C198 /* DetailsView.swift in Sources */,
 				CFF6BB7F283F97AC0022C198 /* ContactListApp.swift in Sources */,
-				CFF6BB9B283F9EE70022C198 /* NameRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
