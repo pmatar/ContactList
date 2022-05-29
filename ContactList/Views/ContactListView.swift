@@ -13,7 +13,7 @@ struct ContactListView: View {
     
     var body: some View {
         List(persons, id: \.email) { person in
-            Section(header: Text(person.fullName)) {
+            Section(person.fullName) {
                 Label(person.phoneNumber, systemImage: "phone")
                 Label(person.email, systemImage: "tray")
             }
