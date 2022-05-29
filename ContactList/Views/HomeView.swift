@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct HomeView: View {
+    
     private let persons = Person.getContactList()
     
     var body: some View {
-        
         NavigationView {
             TabView {
                 NameListView(persons: persons)

@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct NameListView: View {
+    
     let persons: [Person]
     
     var body: some View {
-        
         List(persons, id: \.email) { person in
             NavigationLink(destination: DetailsView(person: person)) {
                 Text(person.fullName)

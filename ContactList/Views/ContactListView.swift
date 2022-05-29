@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct ContactListView: View {
+    
     let persons: [Person]
     
     var body: some View {
-        
         List(persons, id: \.email) { person in
             Section(header: Text(person.fullName)) {
                 Label(person.phoneNumber, systemImage: "phone")
